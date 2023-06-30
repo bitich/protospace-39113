@@ -19,8 +19,8 @@
 |prototype                 |references                |null: false, foreign_key: true          |
 |user                      |references                |null: false, foreign_key: true          |
 
-- belongs_to :users
-- belongs_to :prototypes
+- belongs_to :user
+- belongs_to :prototype
 
 ## prototypes 
 |Column                    |Type                      |Option                                  |
@@ -30,5 +30,5 @@
 |concept                   |text                      |null: false                             |
 |user                      |references                |null: false, foreign_key: true          |
 
-- belong_to :users
+- belong_to :user
 - has_many :comments
